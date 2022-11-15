@@ -33,5 +33,5 @@ jobs:
           cd /home/runner/ocr
           export PATH="/usr/share/miniconda/bin:$PATH"
           source activate ocr
-          nohup python backned/main.py &
+          nohup python backend/main.py &
           cloudflared tunnel --url 0.0.0.0:8087
