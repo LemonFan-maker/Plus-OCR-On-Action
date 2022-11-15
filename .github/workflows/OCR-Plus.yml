@@ -24,9 +24,10 @@ jobs:
           pip install -r requirements.txt
       - name: "安装内网穿透服务"
         run: |
-          cd /home/runner/tunnel
-          aria2c "https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb"
-          sudo dpkg -i cloudflared-linux-amd64.deb
+          cd /home/runner/ocr
+          aria2c "https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64"
+          mv cloudflared-linux-amd64 cloudflared
+          chmod a+x cloudflared
       - name: "启动OCR服务"
         run: |
           sudo sysctl -w net.core.rmem_max=2500000
@@ -34,4 +35,4 @@ jobs:
           export PATH="/usr/share/miniconda/bin:$PATH"
           source activate ocr
           nohup python backend/main.py &
-          cloudflared tunnel --url 0.0.0.0:8087
+          ./cloudflared tunnel --url 0.0.0.0:8087
