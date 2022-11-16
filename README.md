@@ -1,9 +1,9 @@
 <h1 align="center">在 GitHub Action 上部署 OCR 服务</h1>
 <h2 align="center">Plus Version</h1>
 
-### 请自觉遵守[MIT License](./LICENSE)
+### 请自觉遵守[GNU License](./LICENSE)
 
-**来源:**感谢*DayBreak-u*大佬
+**来源:** 感谢*DayBreak-u*大佬
 
 ## 一、特性
 相较于[基础OCR服务](https://github.com/LemonFan-maker/OCR-On-Action)改进了
