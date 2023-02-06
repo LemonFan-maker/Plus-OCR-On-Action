@@ -3,7 +3,7 @@
 
 ### 请自觉遵守[GNU License](./LICENSE)
 
-**来源:** 感谢*[DayBreak-u](https://github.com/DayBreak-u/chineseocr_lite)*大佬
+大佬仓库: [DayBreak-u](https://github.com/DayBreak-u/chineseocr_lite)
 
 ## 一、特性
 相较于[基础OCR服务](https://github.com/LemonFan-maker/OCR-On-Action)改进了
